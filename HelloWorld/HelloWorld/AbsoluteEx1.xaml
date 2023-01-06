@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.AbsoluteEx1">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="butterfly.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+            <Label Text="Relax" FontSize="30" TextColor="White"
+                   AbsoluteLayout.LayoutBounds="0,20,1,50"
+                   AbsoluteLayout.LayoutFlags="WidthProportional"
+                   HorizontalOptions="Center" />
+            <BoxView Opacity="0.5" Color="Black"
+                     AbsoluteLayout.LayoutBounds="0,1,1,100"
+                     AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"/>
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" Padding="30, 0"
+                         AbsoluteLayout.LayoutBounds="0,1,1,100"
+                         AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional">
+                <Label HorizontalOptions="Center" Text="Profile" TextColor="White"/>
+                <Label HorizontalOptions="CenterAndExpand" Text="Meditate" TextColor="White"/>
+                <Label Text="Themes" TextColor="White"/>
+            </StackLayout>
+            
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

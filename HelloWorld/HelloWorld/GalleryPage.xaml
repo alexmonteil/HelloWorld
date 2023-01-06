@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.GalleryPage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView Color="Black"
+                     AbsoluteLayout.LayoutBounds="0,0,1,1"
+                     AbsoluteLayout.LayoutFlags="All"/>
+            <Button Text="Previous"
+                    AbsoluteLayout.LayoutBounds="0.05, 0.05, 100, 100"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Clicked="PreviousButtonClicked"/>
+            <ActivityIndicator IsRunning="{Binding Source={x:Reference galleryimage}, Path=IsLoading}" 
+                               AbsoluteLayout.LayoutBounds="0.5, 0.05, 100, 100"
+                               AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Button Text="Next"
+                    AbsoluteLayout.LayoutBounds="0.95, 0.05, 100, 100"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    Clicked="NextButtonClicked"/>
+            <Image x:Name="galleryimage" 
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

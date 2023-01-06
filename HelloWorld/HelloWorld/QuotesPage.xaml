@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.QuotesPage"
+             Padding="{OnPlatform '20', Android='20,30,20,20', iOS='20,40,20,20'}">
+    <ContentPage.Content>
+        <StackLayout BindingContext="{x:Reference FontSlider}" HorizontalOptions="FillAndExpand">
+            <Button Text="Next" x:Name="NextButton" Clicked="NextButton_OnClicked"></Button>
+            <Label Text="{Binding Value, StringFormat='Value is {0:N0}'}" />
+            <Slider x:Name="FontSlider" Maximum="50" Minimum="16"/>
+            <Label x:Name="QuotesLabel" FontSize="{Binding Value}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
