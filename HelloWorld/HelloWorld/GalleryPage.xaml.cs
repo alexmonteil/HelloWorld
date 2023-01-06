@@ -10,6 +10,7 @@ namespace HelloWorld
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class GalleryPage : ContentPage
 	{
+
         private int _imageId = 60;
         
         public GalleryPage()
