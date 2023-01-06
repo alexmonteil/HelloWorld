@@ -12,10 +12,10 @@ namespace HelloWorld
 	{
 
         private int _imageId = 60;
-        
+
         public GalleryPage()
-		{
-			InitializeComponent();
+        {
+            InitializeComponent();
             LoadImage();
         }
 
